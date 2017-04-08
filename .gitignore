@@ -2,6 +2,7 @@
 .DS_STORE
 *.log
 .Package.swift.bak
+Package.pins
 
 # Ignored directories
 .build/
