@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_65"
+               BlueprintIdentifier = "OBJ_67"
                BuildableName = "Operadics.framework"
                BlueprintName = "Operadics"
                ReferencedContainer = "container:PlayingCards.xcodeproj">
@@ -28,7 +28,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_72"
+               BlueprintIdentifier = "OBJ_74"
                BuildableName = "Swiftx.framework"
                BlueprintName = "Swiftx"
                ReferencedContainer = "container:PlayingCards.xcodeproj">
@@ -42,7 +42,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_85"
+               BlueprintIdentifier = "OBJ_87"
                BuildableName = "Swiftz.framework"
                BlueprintName = "Swiftz"
                ReferencedContainer = "container:PlayingCards.xcodeproj">
@@ -56,8 +56,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "OBJ_134"
-               BuildableName = "PlayingCards"
+               BlueprintIdentifier = "OBJ_136"
+               BuildableName = "PlayingCards.framework"
                BlueprintName = "PlayingCards"
                ReferencedContainer = "container:PlayingCards.xcodeproj">
             </BuildableReference>
@@ -70,6 +70,16 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "OBJ_149"
+               BuildableName = "PlayingCardsTests.xctest"
+               BlueprintName = "PlayingCardsTests"
+               ReferencedContainer = "container:PlayingCards.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <AdditionalOptions>
       </AdditionalOptions>
@@ -87,7 +97,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "OBJ_65"
+            BlueprintIdentifier = "OBJ_67"
             BuildableName = "Operadics.framework"
             BlueprintName = "Operadics"
             ReferencedContainer = "container:PlayingCards.xcodeproj">
