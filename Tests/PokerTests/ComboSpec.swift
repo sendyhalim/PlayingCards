@@ -36,6 +36,33 @@ class ComboSpec: QuickSpec {
             cards: [Card(value: 2, suit: .club), Card(value: 2, suit: .diamond)],
             expected: true
           )
+        ],
+
+        .straight: [
+          ValidatorTestCase(
+            cards: [],
+            expected: false
+          ),
+          ValidatorTestCase(
+            cards: [
+              Card(value: 2, suit: .club),
+              Card(value: 3, suit: .club),
+              Card(value: 4, suit: .club),
+              Card(value: 5, suit: .club),
+              Card(value: 6, suit: .club)
+            ],
+            expected: false
+          ),
+          ValidatorTestCase(
+            cards: [
+              Card(value: 2, suit: .club),
+              Card(value: 3, suit: .club),
+              Card(value: 4, suit: .club),
+              Card(value: 5, suit: .club),
+              Card(value: 6, suit: .diamond)
+            ],
+            expected: true
+          )
         ]
       ]
 

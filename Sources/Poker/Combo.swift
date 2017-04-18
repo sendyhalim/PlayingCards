@@ -1,4 +1,6 @@
 import PlayingCards
+import Swiftz
+import Operadics
 
 ///  An enum that represents a poker hand combo
 ///
@@ -29,6 +31,34 @@ extension Combo: Comparable {
   }
 }
 
+func differentByOne(_ cardA: Card, _ cardB: Card) -> Bool {
+  return abs(cardA.value - cardB.value) == 1
+}
+
+func inSequence(cards: [Card]) -> Bool {
+  guard cards.count > 1 else {
+    return false
+  }
+
+  if cards.count == 2 {
+    return differentByOne(cards[0], cards[1])
+  } else {
+    return differentByOne(cards[0], cards[1]) && inSequence(cards: Array(cards.dropFirst()))
+  }
+}
+
+func haveSameSuit(cards: [Card]) -> Bool {
+  guard cards.count > 1 else {
+    return true
+  }
+
+  if cards.count == 2 {
+    return cards[0].suit == cards[1].suit
+  } else {
+    return cards[0].suit == cards[1].suit && haveSameSuit(cards: Array(cards.dropFirst()))
+  }
+}
+
 public struct ComboValidator {
   public let combo: Combo
   public let validate: ([Card]) -> Bool
@@ -48,6 +78,17 @@ public struct ComboValidator {
         }
 
         return (cards[0].value == cards[1].value) && (cards[0].suit != cards[1].suit)
-      })
+      }
+    ),
+    .straight: ComboValidator(
+      combo: .straight,
+      validate: { cards in
+        guard cards.count == 5 else {
+          return false
+        }
+
+        return inSequence(cards: cards) && !haveSameSuit(cards: cards)
+      }
+    )
   ]
 }
