@@ -33,21 +33,21 @@ public struct ComboValidator {
   public let combo: Combo
   public let validate: ([Card]) -> Bool
 
-  public static let all: [ComboValidator] = [
-    ComboValidator(
+  public static let all: [Combo: ComboValidator] = [
+    .single: ComboValidator(
       combo: .single,
       validate: { cards in
         return cards.count == 1
       }
     ),
-    ComboValidator(
+    .pair: ComboValidator(
       combo: .pair,
       validate: { cards in
         guard cards.count == 2 else {
           return false
         }
 
-        return (cards[0].value == cards[1].value) && (cards[0].suit != cards[0].suit)
+        return (cards[0].value == cards[1].value) && (cards[0].suit != cards[1].suit)
       })
   ]
 }
