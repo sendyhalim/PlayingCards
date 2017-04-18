@@ -7,7 +7,7 @@ let package = Package(
     Target(name: "Poker", dependencies: [.Target(name: "PlayingCards")])
   ],
   dependencies: [
-    .Package(url: "https://github.com/typelift/Swiftz", majorVersion: 0, minor: 6),
+    .Package(url: "https://github.com/typelift/Swiftz", majorVersion: 0, minor: 6)
   ]
 );
 
