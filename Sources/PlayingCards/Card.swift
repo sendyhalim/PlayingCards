@@ -6,8 +6,8 @@ public enum Suit: Int {
 }
 
 public struct Card {
-  let value: Int
-  let suit: Suit
+  public let value: Int
+  public let suit: Suit
 }
 
 extension Card: Comparable {

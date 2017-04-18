@@ -73,98 +73,98 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		79E08E1F1EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB42D1EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_72;
 			remoteInfo = Operadics;
 		};
-		79E08E201EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB42E1EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_72;
 			remoteInfo = Operadics;
 		};
-		79E08E211EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB42F1EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_79;
 			remoteInfo = Swiftx;
 		};
-		79E08E221EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4301EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_72;
 			remoteInfo = Operadics;
 		};
-		79E08E231EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4311EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_79;
 			remoteInfo = Swiftx;
 		};
-		79E08E241EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4321EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_92;
 			remoteInfo = Swiftz;
 		};
-		79E08E251EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4331EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_157;
 			remoteInfo = PlayingCards;
 		};
-		79E08E261EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4341EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_72;
 			remoteInfo = Operadics;
 		};
-		79E08E271EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4351EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_79;
 			remoteInfo = Swiftx;
 		};
-		79E08E281EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4361EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_92;
 			remoteInfo = Swiftz;
 		};
-		79E08E291EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4371EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_72;
 			remoteInfo = Operadics;
 		};
-		79E08E2A1EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4381EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_79;
 			remoteInfo = Swiftx;
 		};
-		79E08E2B1EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB4391EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = OBJ_92;
 			remoteInfo = Swiftz;
 		};
-		79E08E2C1EA6963300BB60E2 /* PBXContainerItemProxy */ = {
+		79AAB43A1EA69EE6009A23CC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = OBJ_1 /* Project object */;
 			proxyType = 1;
@@ -682,72 +682,72 @@
 		OBJ_139 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_72 /* Operadics */;
-			targetProxy = 79E08E201EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB42E1EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_140 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_79 /* Swiftx */;
-			targetProxy = 79E08E211EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB42F1EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_153 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_72 /* Operadics */;
-			targetProxy = 79E08E221EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4301EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_154 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_79 /* Swiftx */;
-			targetProxy = 79E08E231EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4311EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_155 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_92 /* Swiftz */;
-			targetProxy = 79E08E241EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4321EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_156 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_157 /* PlayingCards */;
-			targetProxy = 79E08E251EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4331EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_167 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_72 /* Operadics */;
-			targetProxy = 79E08E261EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4341EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_168 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_79 /* Swiftx */;
-			targetProxy = 79E08E271EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4351EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_169 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_92 /* Swiftz */;
-			targetProxy = 79E08E281EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4361EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_181 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_72 /* Operadics */;
-			targetProxy = 79E08E291EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4371EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_182 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_79 /* Swiftx */;
-			targetProxy = 79E08E2A1EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4381EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_183 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_92 /* Swiftz */;
-			targetProxy = 79E08E2B1EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB4391EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_184 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_157 /* PlayingCards */;
-			targetProxy = 79E08E2C1EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB43A1EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 		OBJ_91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = OBJ_72 /* Operadics */;
-			targetProxy = 79E08E1F1EA6963300BB60E2 /* PBXContainerItemProxy */;
+			targetProxy = 79AAB42D1EA69EE6009A23CC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
