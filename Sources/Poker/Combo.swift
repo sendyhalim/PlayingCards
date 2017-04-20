@@ -40,11 +40,13 @@ func inSequence(cards: [Card]) -> Bool {
     return false
   }
 
-  if cards.count == 2 {
-    return differentByOne(cards[0], cards[1])
-  } else {
-    return differentByOne(cards[0], cards[1]) && inSequence(cards: Array(cards.dropFirst()))
+  let (_, isInSequence) = cards.tail!.reduce((cards[0], true)) { acc, card in
+    let (previousCard, wasInSequence) = acc
+
+    return (card, wasInSequence && differentByOne(previousCard, card))
   }
+
+  return isInSequence
 }
 
 func haveSameSuit(cards: [Card]) -> Bool {
@@ -52,10 +54,10 @@ func haveSameSuit(cards: [Card]) -> Bool {
     return true
   }
 
-  if cards.count == 2 {
-    return cards[0].suit == cards[1].suit
-  } else {
-    return cards[0].suit == cards[1].suit && haveSameSuit(cards: Array(cards.dropFirst()))
+  let suit = cards[0].suit
+
+  return cards.tail!.reduce(true) {
+    return $0 && $1.suit == suit
   }
 }
 
