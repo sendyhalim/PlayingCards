@@ -41,40 +41,42 @@ func differentByOne(_ leftCard: Card, _ rightCard: Card) -> Bool {
   return abs(leftCard.value - rightCard.value) == 1
 }
 
-///  Check if the given cards' values are in sequence. This function assumes
-///  that the cards are sorted.
-///
-///  - parameter cards: Array of cards
-///
-///  - returns: Boolean
-func inSequence(cards: [Card]) -> Bool {
-  guard cards.count > 1 else {
-    return false
+extension Array where Element == Card {
+  ///  Check if cards' values are in sequence. This function assumes
+  ///  that the cards are sorted.
+  ///
+  ///  - parameter cards: Array of cards
+  ///
+  ///  - returns: Boolean
+  func inSequence() -> Bool {
+    guard self.count > 1 else {
+      return false
+    }
+
+    let (_, isInSequence) = self.tail!.reduce((self[0], true)) { acc, card in
+      let (previousCard, wasInSequence) = acc
+
+      return (card, wasInSequence && differentByOne(previousCard, card))
+    }
+
+    return isInSequence
   }
 
-  let (_, isInSequence) = cards.tail!.reduce((cards[0], true)) { acc, card in
-    let (previousCard, wasInSequence) = acc
+  ///  Check if cards only have 1 suit
+  ///
+  ///  - parameter cards: Array of cards
+  ///
+  ///  - returns: Boolean
+  func haveSameSuit() -> Bool {
+    guard self.count > 1 else {
+      return true
+    }
 
-    return (card, wasInSequence && differentByOne(previousCard, card))
-  }
+    let suit = self[0].suit
 
-  return isInSequence
-}
-
-///  Check if the given cards only have 1 suit
-///
-///  - parameter cards: Array of cards
-///
-///  - returns: Boolean
-func haveSameSuit(cards: [Card]) -> Bool {
-  guard cards.count > 1 else {
-    return true
-  }
-
-  let suit = cards[0].suit
-
-  return cards.tail!.reduce(true) {
-    return $0 && $1.suit == suit
+    return self.tail!.reduce(true) {
+      return $0 && $1.suit == suit
+    }
   }
 }
 
@@ -106,7 +108,7 @@ public struct ComboValidator {
           return false
         }
 
-        return inSequence(cards: cards) && !haveSameSuit(cards: cards)
+        return cards.inSequence() && !cards.haveSameSuit()
       }
     )
   ]
