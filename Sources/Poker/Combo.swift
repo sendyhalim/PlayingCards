@@ -31,10 +31,22 @@ extension Combo: Comparable {
   }
 }
 
-func differentByOne(_ cardA: Card, _ cardB: Card) -> Bool {
-  return abs(cardA.value - cardB.value) == 1
+///  Check if the given cards only have value difference by 1
+///
+///  - parameter leftCard:  -
+///  - parameter rightCard: -
+///
+///  - returns: Boolean
+func differentByOne(_ leftCard: Card, _ rightCard: Card) -> Bool {
+  return abs(leftCard.value - rightCard.value) == 1
 }
 
+///  Check if the given cards' values are in sequence. This function assumes
+///  that the cards are sorted.
+///
+///  - parameter cards: Array of cards
+///
+///  - returns: Boolean
 func inSequence(cards: [Card]) -> Bool {
   guard cards.count > 1 else {
     return false
@@ -49,6 +61,11 @@ func inSequence(cards: [Card]) -> Bool {
   return isInSequence
 }
 
+///  Check if the given cards only have 1 suit
+///
+///  - parameter cards: Array of cards
+///
+///  - returns: Boolean
 func haveSameSuit(cards: [Card]) -> Bool {
   guard cards.count > 1 else {
     return true
